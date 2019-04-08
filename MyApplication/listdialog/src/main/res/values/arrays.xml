@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Radio_dialog_items">
+        <item>亚洲</item>
+        <item>欧洲</item>
+        <item>北美洲</item>
+        <item>南美洲</item>
+        <item>非洲</item>
+        <item>大洋洲</item>
+        <item>南极洲</item>
+    </string-array>
+</resources>

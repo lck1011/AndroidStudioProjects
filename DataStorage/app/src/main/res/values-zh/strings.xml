@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">数据存储</string>
+    <string name="write_data">写入数据</string>
+    <string name="read_data">读取数据</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RadioButton Sample</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="lang_1">英语</string>
+    <string name="lang_2">德语</string>
+</resources>

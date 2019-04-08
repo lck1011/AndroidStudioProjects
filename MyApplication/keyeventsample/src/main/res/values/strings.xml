@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KeyEvent Sample</string>
+    <string name="test_image">test_image</string>
+</resources>

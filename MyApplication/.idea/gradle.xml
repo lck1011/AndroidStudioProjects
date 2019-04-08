@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/buttonsample" />
+            <option value="$PROJECT_DIR$/checkboxsample" />
+            <option value="$PROJECT_DIR$/edittextsample" />
+            <option value="$PROJECT_DIR$/keyeventsample" />
+            <option value="$PROJECT_DIR$/layoutsample" />
+            <option value="$PROJECT_DIR$/layoutsample2" />
+            <option value="$PROJECT_DIR$/listdialog" />
+            <option value="$PROJECT_DIR$/listviewsample" />
+            <option value="$PROJECT_DIR$/progressbar" />
+            <option value="$PROJECT_DIR$/radiobuttonsample" />
+            <option value="$PROJECT_DIR$/seekbarsample" />
+            <option value="$PROJECT_DIR$/spinnersample" />
+            <option value="$PROJECT_DIR$/textdialog" />
+            <option value="$PROJECT_DIR$/textimagetoast" />
+            <option value="$PROJECT_DIR$/thing" />
+            <option value="$PROJECT_DIR$/touchsample" />
+            <option value="$PROJECT_DIR$/xuanzhuan" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntentSample</string>
+    <string name="web">Call web browser</string>
+    <string name="map">Call map</string>
+    <string name="call">Call to make a call</string>
+    <string name="email">Call to send email</string>
+    <string name="select">select a email app</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Spinner Sample</string>
+    <string name="constellation">选择你喜欢的颜色</string>
+</resources>

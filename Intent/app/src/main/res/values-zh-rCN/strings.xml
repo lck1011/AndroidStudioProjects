@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">意图示例</string>
+    <string name="web">调用web浏览器</string>
+    <string name="map">调用地图</string>
+    <string name="call">调用打电话界面</string>
+    <string name="email">调用发邮件</string>
+    <string name="select">选择一个邮件应用</string>
+</resources>

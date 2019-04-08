@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CheckBox Sample</string>
+    <string name="checkBox01">旅游</string>
+    <string name="checkBox02">看书</string>
+    <string name="checkBox03">舞蹈</string>
+    <string name="checkBox04">上网</string>
+</resources>

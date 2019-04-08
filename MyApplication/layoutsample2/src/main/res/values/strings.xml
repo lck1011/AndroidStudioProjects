@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Layout Sample2</string>
+    <string name="activity_main_search">名称查询</string>
+    <string name="activity_main_confim">查询</string>
+    <string name="activity_main_cancel">取消</string>
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':touchsample', ':keyeventsample', ':layoutsample', ':layoutsample2', ':xuanzhuan', ':buttonsample', ':edittextsample', ':radiobuttonsample', ':checkboxsample', ':progressbar', ':seekbarsample', ':spinnersample', ':listviewsample', ':textimagetoast', ':textdialog', ':listdialog', ':customdialog', ':menusample', ':backhome', ':loginsample'
