@@ -33,8 +33,8 @@ public class DBHelper extends SQLiteOpenHelper {
             Log.i(TAG, sql.toString());
 
             db.execSQL(sql.toString());
-            db.execSQL("insert into weight(_id,output,input) " + "values('2016-10-8 17:24:27','1300大卡','3300大卡')");
-            db.execSQL("insert into weight(_id,output,input) " + "values('2016-10-9 15:26:45','2500大卡','4000大卡')");
+            db.execSQL("insert into weight (_id,output,input) " + "values('2016-10-8 17:24:27','1300大卡','3300大卡')");
+            db.execSQL("insert into weight (_id,output,input) " + "values('2016-10-9 15:26:45','2500大卡','4000大卡')");
         } catch (Exception e) {
             Log.e(TAG, e.getMessage());
         }
