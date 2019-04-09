@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SQLite Sample</string>
+    <string name="add">add</string>
+    <string name="conf">parameter settings</string>
 </resources>

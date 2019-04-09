@@ -10,4 +10,6 @@ public interface SysConst {
     public static final String TABLE_FIELD_WEIGHT = "weight";
     public static final String TABLE_FIELD_AMOUNTEXERCISE = "amountExercise";
     public static final String DATE_FORMATE = "yyyy-mm-dd  HH:mm:ss";
+    String DATE_KEY = "2";
+    String PREFS_CONF = "2";
 }
