@@ -2,13 +2,17 @@ package com.example.sqlitesample;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -21,8 +25,10 @@ public class HealthListActivity extends AppCompatActivity {
     public static final int CONF_MENU_ID = Menu.FIRST + 1;
 
     private ListView mListView;
+
     private DateFormat mDateFormat;
     private SharedPreferences mSharedPreferences;
+    private DBHelper mDBHelper;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,10 +53,9 @@ public class HealthListActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
         menu.add(0, ADD_MENU_ID, 1, R.string.add).setIcon(android.R.drawable.ic_menu_add);
         menu.add(0, CONF_MENU_ID, 2, R.string.conf).setIcon(android.R.drawable.ic_menu_compass);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -72,5 +77,22 @@ public class HealthListActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, sdate);
         mListView.setAdapter(adapter);
+
+//        SQLiteDatabase db = mDBHelper.getReadableDatabase();
+//        String[] colums = new String[]{SysConst.TABLE_FIELD_DATE,
+//        SysConst.TABLE_FIELD_INPUT,SysConst.TABLE_FIELD_OUTPUT,
+//        SysConst.TABLE_FIELD_WEIGHT,
+//        SysConst.TABLE_FIELD_AMOUNTEXERCISE};
+//
+//        Cursor mCursor = db.query(SysConst.TABLE_NAME, colums, null, null, null, null,
+//                SysConst.TABLE_FIELD_DATE + "asc");
+//        while(mCursor.moveToNext()){
+//            Log.d(TAG,mCursor.getString(mCursor.getColumnIndex(SysConst.TABLE_FIELD_INPUT)));
+//            Log.d(TAG,mCursor.getString(mCursor.getColumnIndex(SysConst.TABLE_FIELD_OUTPUT)));
+//        }
+//        startManagingCursor(mCursor);
+//        SimpleCursorAdapter mCursorAdapter = new SimpleCursorAdapter(this,R.layout.listitem,mCursor,
+//                colums,newint[]{R.id.date,R.id.input,R.id.output,R.id.weight,R.id.amountExercise});
+//        mListView.setAdapter(mCursorAdapter);
     }
 }
