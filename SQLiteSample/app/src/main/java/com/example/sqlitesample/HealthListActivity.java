@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -16,11 +15,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-import java.text.SimpleDateFormat;
-
 public class HealthListActivity extends AppCompatActivity {
-    private static final String TAG = "HealthListActivity";
 
+    private static final String TAG = "HealthListActivity";//调试标签
+
+    //添加菜单项
     public static final int ADD_MENU_ID = Menu.FIRST;
     public static final int CONF_MENU_ID = Menu.FIRST + 1;
 
@@ -30,7 +29,7 @@ public class HealthListActivity extends AppCompatActivity {
     private DBHelper mDBHelper;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -47,6 +46,7 @@ public class HealthListActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 
     @Override
@@ -57,9 +57,14 @@ public class HealthListActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, ADD_MENU_ID, 1, R.string.add).setIcon(android.R.drawable.ic_menu_add);
-        menu.add(0, CONF_MENU_ID, 2, R.string.conf).setIcon(android.R.drawable.ic_menu_compass);
-        return super.onCreateOptionsMenu(menu);
+
+        super.onCreateOptionsMenu(menu);
+        menu.add(0, ADD_MENU_ID, 1, R.string.add).setIcon(
+                android.R.drawable.ic_menu_add);
+        menu.add(0, CONF_MENU_ID, 2, R.string.conf).setIcon(
+                android.R.drawable.ic_menu_compass);
+        return true;
+
     }
 
     @Override
@@ -70,12 +75,14 @@ public class HealthListActivity extends AppCompatActivity {
                 startActivity(itadd);
                 return true;
             case CONF_MENU_ID:
-                //todo
+                // TODO待定
+
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void findAll() {
+
         SQLiteDatabase db = mDBHelper.getReadableDatabase();
 
         String[] colums = new String[]{SysConst.TABLE_FIELD_DATE,
@@ -98,6 +105,7 @@ public class HealthListActivity extends AppCompatActivity {
 
         mListView.setAdapter(mCursorAdapter);
     }
+
 
     void showListDialog(int pos) {
 
@@ -151,4 +159,5 @@ public class HealthListActivity extends AppCompatActivity {
                 }).show();
 
     }
+
 }

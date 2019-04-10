@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="摄入能量" />
+        android:text="@string/input" />
 
     <EditText
         android:id="@+id/txtinput"
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="消耗能量" />
+        android:text="@string/output" />
 
     <EditText
         android:id="@+id/txtoutput"
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="体重" />
+        android:text="@string/weight" />
 
     <EditText
         android:id="@+id/txtweight"
@@ -37,7 +37,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="运动量" />
+        android:text="@string/amountExercise" />
 
     <EditText
         android:id="@+id/txtamountExercise"
@@ -54,12 +54,12 @@
             android:id="@+id/btnok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="确定" />
+            android:text="@string/ok" />
 
         <Button
             android:id="@+id/btncancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="取消" />
+            android:text="@string/cancel" />
     </LinearLayout>
 </LinearLayout>
